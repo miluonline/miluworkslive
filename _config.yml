@@ -1,0 +1,11 @@
+# Site settings
+title: Milu Works!
+email: imiluonline@gmail.com
+description: "WELCOME to my apps website!  Thanks for visiting, and please come back, because I update this page frequently."
+baseurl: ""
+url: "http://miluonline.github.io"
+twitter_username: miluhere
+github_username:  miluonline
+# Build settings
+markdown: kramdown
+permalink: pretty
