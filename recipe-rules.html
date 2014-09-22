@@ -107,5 +107,12 @@
     "ingredients": "//li[@itemprop='ingredient']",
     "instructions": "//ol[@itemprop='instructions']/li",
     "image": "//img[@itemprop='photo']/@src"
+  },
+  "www.eatingwell.com": {
+    "name": "//div[@id='recipeContent']/h1",
+    "desc": "//p[@itemprop='description']",
+    "ingredients": "//h3[.='Ingredients']/../ul/li",
+    "instructions": "//ol[@itemprop='recipeinstructions']/li",
+    "image": "//img[@itemprop='image']/@src"
   }
 }
