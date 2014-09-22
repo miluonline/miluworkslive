@@ -156,5 +156,12 @@
     "ingredients": "//ul[@class='recipe-list']/li",
     "instructions": "//li[@itemprop='recipeInstructions']",
     "image": "//figure/img/@src"
+  },
+  "www.health.com": {
+    "name": "//h1",
+    "desc": "//h1",
+    "ingredients": "//div[@id='ingredients-prep']/ul/li[position()<last()]",
+    "instructions": "//span[@itemprop='instructions']/p",
+    "image": "//img[@id='recipe_image']/@src"
   }
 }
