@@ -130,10 +130,10 @@
     "image": "//div[contains(@class,'image-primary')]/a/img/@src"
   },
   "www.foodandwine.com": {
-    "name": "//h1[@class='main-title']",
-    "desc": "//div[@class='hednote']/p/span",
-    "ingredients": "//div[@class='ingredients']/ul/li",
-    "instructions": "//div[@itemprop='recipeInstructions']/p",
-    "image": "//div[contains(@class,'image-primary')]/a/img/@src"
+    "name": "//h1",
+    "desc": "//p[@itemprop='description']",
+    "ingredients": "//span[@itemprop='ingredients']",
+    "instructions": "//ol[@itemprop='recipeInstructions']/li/span",
+    "image": "//div[@class='image-frame']/img/@src"
   }
 }
