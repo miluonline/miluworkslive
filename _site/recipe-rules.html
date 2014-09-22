@@ -152,9 +152,9 @@
   },
   "food52.com": {
     "name": "//h1",
-    "desc": "//h4",
-    "ingredients": "//div[contains(@class,'group-recipe-ingredients')]//div[@class='ingredient recipe-ingredient']",
-    "instructions": "//div[contains(@class,'field-field-recipe-directions')]//ol/li",
-    "image": "//div[@class='image']/a/img/@src"
+    "desc": "//span[@class='recipe-note']",
+    "ingredients": "//ul[@class='recipe-list']/li",
+    "instructions": "//li[@itemprop='recipeInstructions']",
+    "image": "//figure/img/@src"
   }
 }
