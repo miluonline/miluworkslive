@@ -144,10 +144,10 @@
     "image": "//figure/img/@src"
   },
   "www.foodrepublic.com": {
-    "name": "//h1[@itemprop='name']",
-    "desc": "//div[@class='left-col']/p",
-    "ingredients": "//section[@class='recipe-ingredients']/p",
-    "instructions": "//section[@itemprop='recipeInstructions']/p",
-    "image": "//figure/img/@src"
+    "name": "//h1",
+    "desc": "//h4",
+    "ingredients": "//div[contains(@class,'group-recipe-ingredients')]//div[@class='ingredient recipe-ingredient']",
+    "instructions": "//div[contains(@class,'field-field-recipe-directions')]//ol/li",
+    "image": "//div[@class='image']/a/img/@src"
   }
 }
