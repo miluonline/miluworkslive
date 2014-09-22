@@ -121,5 +121,12 @@
     "ingredients": "//ol[@class='ingredients']/li",
     "instructions": "//h2[.='Preparation']/following-sibling::ol/li",
     "image": "//img[@class='full-width']/@src"
+  },
+  "www.finecooking.com": {
+    "name": "//h1[@class='main-title']",
+    "desc": "//div[@class='hednote']/p/span",
+    "ingredients": "//div[@class='ingredients']/ul/li",
+    "instructions": "//div[@itemprop='recipeInstructions']/p",
+    "image": "//div[contains(@class,'image-primary')]/a/img/@src"
   }
 }
