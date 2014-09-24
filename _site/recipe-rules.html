@@ -182,11 +182,11 @@
     "image": "//div[@class='imageBoxLeft']/img/@src"
   },
   "m.kraftrecipes.com": {
-    "name": "//h1",
-    "desc": "//div[@class='recipeDesc']",
-    "ingredients": "//span[@itemprop='ingredients']", 
-    "instructions": "//span[@itemprop='recipeInstructions']/span/p/span",
-    "image": "//div[@class='imageBoxLeft']/img/@src"
+    "name": "//div[contains(@class,'boldtitle')]",
+    "desc": "//div[contains(@class,'boldtitle')]",
+    "ingredients": "//div[.='What You Need']/following-sibling::div[@class='paddingleft5'][1]", 
+    "instructions": "//div[.='What You Need']/following-sibling::div[@class='paddingleft5'][2]",
+    "image": "//img[@alt='recipe_image']/@src"
   },
 
   "www.marthastewart.com": {
