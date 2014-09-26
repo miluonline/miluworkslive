@@ -207,15 +207,15 @@
     "image": "//img[@itemprop='photo']/@src",
     "mixingredients": "yes"    
   },
-
-
   "www.rachaelray.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h3[@itemprop='description']",
+    "desc": "//div[@itemprop='description']/p",
+    "ingredients": "//div[@itemprop='ingredients']/ul/li", 
+    "instructions": "//span[@itemprop='recipeInstructions']/p",
+    "image": "//img[@itemprop='image']/@src"
   },
+
+
   "www.rachaelraymag.com": {
     "name": "//h1[@id='microdata-recipe-name']",
     "desc": "//p[@id='HeadNotes']",
