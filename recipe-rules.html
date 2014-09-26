@@ -312,12 +312,14 @@
     "instructions": "//div[@id='InstructionSection']/p/span",
     "image": "//img[@id='RecipePhoto']/@src"
   },
+
+  
  "www.wholefoodsmarket.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h2/span[@itemprop='name']",
+    "desc": "//span[@itemprop='description']/p",
+    "ingredients": "//span[@itemprop='ingredients']", 
+    "instructions": "//span[@itemprop='recipeInstructions']",
+    "image": "//img[@itemprop='image']/@src"
   }
 
 }
