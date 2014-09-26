@@ -191,14 +191,14 @@
     "instructions-alternate": "//td[@class='instruction']/span",
     "image": "//div[@class='imageBoxLeft']/img/@src"
   },
-
   "www.marthastewart.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//p[@itemprop='description']",
+    "ingredients": "//span[@class='component-data checklist-item-data']", 
+    "instructions": "//p[@class='body-b instruction-data checklist-item-data']",
+    "image": "//img[@itemprop='image']/@src"
   },
+
   "www.myrecipes.com": {
     "name": "//h1[@id='microdata-recipe-name']",
     "desc": "//p[@id='HeadNotes']",
