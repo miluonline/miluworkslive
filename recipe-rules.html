@@ -221,14 +221,15 @@
     "instructions": "//ol[@class='instructions']/li/span",
     "image": "//img[@class='photo']/@src"
   },
-
   "www.realsimple.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//h1",
+    "ingredients": "//div[@class='field-ingredients']", 
+    "instructions": "//div[@class='field-instructions']/ol/li",
+    "image": "//div[@class='field-image']/img/@src"
   },
+
+
   "www.recipe.com": {
     "name": "//h1[@id='microdata-recipe-name']",
     "desc": "//p[@id='HeadNotes']",
