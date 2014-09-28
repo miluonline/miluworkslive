@@ -247,15 +247,14 @@
     "instructions": "//div[@class='procedure-text']",
     "image": "//section[@class='content-unit hrecipe']/img/@src"
   },
-
-
   "www.simplyrecipes.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
+    "name": "//h1,
+    "desc": "//div[@class='recipe-description']/p[1]",
+    "ingredients": "//li[@itemprop='ingredients']", 
+    "instructions": "//div[@itemprop='recipeInstructions']/p",
     "image": "//img[@id='RecipePhoto']/@src"
   },
+
  "www.skinnytaste.com": {
     "name": "//h1[@id='microdata-recipe-name']",
     "desc": "//p[@id='HeadNotes']",
