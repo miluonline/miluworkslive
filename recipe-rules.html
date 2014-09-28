@@ -291,37 +291,34 @@
     "instructions": "//ol/li/p[@class='description']",
     "image": "//img[@itemprop='photo']/@src"
   },
-
-
  "tastykitchen.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1[@itemprop='name']",
+    "desc": "//span[@itemprop='summary']/p",
+    "ingredients": "//ul/li/span/span", 
+    "instructions": "//span[@itemprop='instructions']/p",
+    "image": "//img[@class='the_recipe_image']/@src"
   },
  "crockingirls.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//div[@itemprop='description']/p[1]",
+    "ingredients": "//div[@itemprop='description']/p[2]", 
+    "instructions": "//div[@itemprop='description']/p[2]/following-sibling::p",
+    "image": "//img[@itemprop='image']/@src"
   },
  "thepioneerwoman.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1/a",
+    "desc": "//h1/a",
+    "ingredients": "//span[@itemprop='ingredient']", 
+    "instructions": "//div[@itemprop='instructions']/p",
+    "image": "//img[@itemprop='photo']/@src"
   },
  "www.vegetariantimes.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h2[@class='entry-title full-title']",
+    "desc": "//div[@class='introduction']",
+    "ingredients": "//li[@itemprop='ingredient']", 
+    "instructions": "//div[@id='post_content']/p",
+    "image": "//img[@itemprop='photo']/@src"
   },
-
 
  "www.wholefoodsmarket.com": {
     "name": "//h2/span[@itemprop='name']",
