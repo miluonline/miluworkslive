@@ -256,15 +256,15 @@
     "instructions": "//div[@itemprop='recipeInstructions']/p",
     "image": "//div[@class='entry-content']/div[@class='featured-image']/img/@src"
   },
-
-
  "www.skinnytaste.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h3/a",
+    "desc": "//h3/a",
+    "ingredients": "//div[@class='post-body entry-content']/ul/li", 
+    "instructions": "//div[@class='post-body entry-content']/ul/following-sibling::text()",
+    "image": "//div[@class='post-body entry-content']/div/a/img[1]/@src"
   },
+
+
  "smittenkitchen.com": {
     "name": "//h1[@id='microdata-recipe-name']",
     "desc": "//p[@id='HeadNotes']",
