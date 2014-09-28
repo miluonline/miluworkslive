@@ -267,26 +267,32 @@
  "smittenkitchen.com": {
     "name": "//h2/a",
     "desc": "//h2/a",
+
     "ingredients": "//p[contains(.,'cup')]/text()", 
     "instructions": "//p[contains(.,'cup')]/following-sibling::p[not(contains(@class,'postmetadata alt'))]",
+    
     "image": "//div[@class='entry']/p/a/img/@src"
   },
 
  "www.tasteofhome.com": {
     "name": "//h1",
     "desc": "//h1",
+
     "ingredients": "//li[@class='rd_ingredient']//td", 
+    
     "instructions": "//li[@class='rd_ingredient']/span[@class='rd_name' and not(contains(@itemprop,'ingredients'))]",
     "image": "//div[@class='rd_recipe_img_container']/img/@src"
   },
 
  "www.taste.com.au": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//p[@itemprop='summary']",
+    "ingredients": "//ul/li/span[@class='element']", 
+    "instructions": "//ol/li/p[@class='description']",
+    "image": "//img[@itemprop='photo']/@src"
   },
+
+
  "tastykitchen.com": {
     "name": "//h1[@id='microdata-recipe-name']",
     "desc": "//p[@id='HeadNotes']",
