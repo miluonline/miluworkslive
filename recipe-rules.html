@@ -240,16 +240,16 @@
     "image": "//img[@class='photo']/@src",
     "mixingredients": "yes"    
   },
-
-
   "www.seriouseats.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//p[@class='caption']",
+    "ingredients": "//div[@class='ingredients-section']/ul/li", 
+    "instructions": "//div[@class='procedure-text']",
+    "image": "//section[@class='content-unit hrecipe']/img/@src"
   },
- "www.simplyrecipes.com": {
+
+
+  "www.simplyrecipes.com": {
     "name": "//h1[@id='microdata-recipe-name']",
     "desc": "//p[@id='HeadNotes']",
     "ingredients": "//span[@id='v_ingredients']//li", 
