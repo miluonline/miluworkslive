@@ -256,6 +256,7 @@
     "instructions": "//div[@itemprop='recipeInstructions']/p",
     "image": "//div[@class='entry-content']/div[@class='featured-image']/img/@src"
   },
+  
  "www.skinnytaste.com": {
     "name": "//h3/a",
     "desc": "//h3/a",
@@ -271,11 +272,10 @@
     "image": "//div[@class='entry']/p/a/img/@src"
   },
 
-
  "www.tasteofhome.com": {
     "name": "//h1",
     "desc": "//h1",
-    "ingredients": "//li[@class='rd_ingredient']//td/font", 
+    "ingredients": "//li[@class='rd_ingredient']//font", 
     "instructions": "//li[@class='rd_ingredient']/span[@class='rd_name' and not(contains(@itemprop,'ingredients'))]",
     "image": "//div[@class='rd_recipe_img_container']/img/@src"
   },
