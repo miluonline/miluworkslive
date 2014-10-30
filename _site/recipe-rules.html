@@ -182,6 +182,7 @@
     "image": "//div[@class='imageBoxLeft']/img/@src"
   },
   "m.kraftrecipes.com": {
+    "lookupQueryParams": "yes",  
     "overrideurl": "http://www.kraftrecipes.com/recipes/milu-RECIPEID.aspx",
     "overridedomain": "www.kraftrecipes.com",
     "name": "//h1",
@@ -191,125 +192,148 @@
     "instructions-alternate": "//td[@class='instruction']/span",
     "image": "//div[@class='imageBoxLeft']/img/@src"
   },
-
   "www.marthastewart.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//p[@itemprop='description']",
+    "ingredients": "//span[@class='component-data checklist-item-data']", 
+    "instructions": "//p[@class='body-b instruction-data checklist-item-data']",
+    "image": "//img[@itemprop='image']/@src"
   },
   "www.myrecipes.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "overrideurl": "www\\.myrecipes\\.com\\/m",
+    "overridedomain": "www.myrecipes.com",    
+    "name": "//h1",
+    "desc": "//h2[@itemprop='summary']/p",
+    "ingredients": "//li[@itemprop='ingredient']", 
+    "instructions": "//ol[@itemprop='instructions']/li",
+    "image": "//img[@itemprop='photo']/@src",
+    "mixingredients": "yes"    
   },
   "www.rachaelray.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h3[@itemprop='name']",
+    "desc": "//div[@itemprop='description']/p",
+    "ingredients": "//div[@itemprop='ingredients']/ul/li", 
+    "instructions": "//span[@itemprop='recipeInstructions']/p",
+    "image": "//img[@itemprop='image']/@src"
   },
   "www.rachaelraymag.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//h1",
+    "ingredients": "//div[@class='ingredientGroup']/ul/li/span", 
+    "instructions": "//ol[@class='instructions']/li/span",
+    "image": "//img[@class='photo']/@src"
   },
   "www.realsimple.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "overrideurl": "www\\.realsimple\\.com\\/m",  
+    "overridedomain": "www.realsimple.com",        
+    "name": "//h1",
+    "desc": "//h1",
+    "ingredients": "//div[@class='field-ingredients']", 
+    "instructions": "//div[@class='field-instructions']/ol/li",
+    "image": "//div[@class='field-image']/img/@src"
   },
   "www.recipe.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//div[@class='fn']/h1",
+    "desc": "//div[@class='fn']/h1",
+    "ingredients": "//div[@class='gs_item_row']", 
+    "instructions": "//div[@class='stepbystepInstruction instruction']",
+    "image": "//img[@class='photo']/@src",
+    "mixingredients": "yes"    
   },
   "www.seriouseats.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//p[@class='caption']",
+    "ingredients": "//div[@class='ingredients-section']/ul/li", 
+    "instructions": "//div[@class='procedure-text']",
+    "image": "//section[@class='content-unit hrecipe']/img/@src"
   },
- "www.simplyrecipes.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+  "www.simplyrecipes.com": {
+    "overrideurl": "www\\.simplyrecipes\\.com\\/m",  
+    "overridedomain": "www.simplyrecipes.com",          
+    "name": "//h1",
+    "desc": "//div[@class='recipe-description']/p[1]",
+    "ingredients": "//li[@itemprop='ingredients']", 
+    "instructions": "//div[@itemprop='recipeInstructions']/p",
+    "image": "//div[@class='entry-content']/div[@class='featured-image']/img/@src"
   },
+
  "www.skinnytaste.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h3/a",
+    "desc": "//h3/a",
+    "ingredients": "//div[@class='post-body entry-content']/ul/li", 
+    "instructions": "", 
+    "image": "//div[@class='post-body entry-content']/div/a/img[1]/@src"
   },
  "smittenkitchen.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h2/a",
+    "desc": "//h2/a",
+
+    "ingredients": "//p[contains(.,'cup')]/text()", 
+    "instructions": "//p[contains(.,'cup')]/following-sibling::p[not(contains(@class,'postmetadata alt'))]",
+    
+    "image": "//div[@class='entry']/p/a/img/@src"
   },
+
  "www.tasteofhome.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//h1",
+
+    "ingredients": "//li[@class='rd_ingredient']//td", 
+    
+    "instructions": "//li[@class='rd_ingredient']/span[@class='rd_name' and not(contains(@itemprop,'ingredients'))]",
+    "image": "//div[@class='rd_recipe_img_container']/img/@src"
   },
+
  "www.taste.com.au": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//p[@itemprop='summary']",
+    "ingredients": "//ul/li/span[@class='element']", 
+    "instructions": "//ol/li/p[@class='description']",
+    "image": "//img[@itemprop='photo']/@src"
   },
  "tastykitchen.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1[@itemprop='name']",
+    "desc": "//span[@itemprop='summary']/p",
+    "ingredients": "//ul/li/span/span", 
+    "instructions": "//span[@itemprop='instructions']/p",
+    "image": "//img[@class='the_recipe_image']/@src",
+    "mixingredients": "yes"
   },
  "crockingirls.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1",
+    "desc": "//div[@itemprop='description']/p[1]",
+    "ingredients": "//div[@itemprop='description']/p[2]", 
+    "instructions": "//div[@itemprop='description']/p[2]/following-sibling::p",
+    "image": "//img[@itemprop='image']/@src"
   },
  "thepioneerwoman.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h1/a",
+    "desc": "//h1/a",
+    "ingredients": "//span[@itemprop='ingredient']", 
+    "instructions": "//div[@itemprop='instructions']/p",
+    "image": "//img[@itemprop='photo']/@src"
   },
  "www.vegetariantimes.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
+    "name": "//h2[@class='entry-title full-title']",
+    "desc": "//div[@class='introduction']",
+    "ingredients": "//li[@itemprop='ingredient']", 
+    "instructions": "//div[@id='post_content']/p",
+    "image": "//img[@itemprop='photo']/@src"
   },
+
  "www.wholefoodsmarket.com": {
-    "name": "//h1[@id='microdata-recipe-name']",
-    "desc": "//p[@id='HeadNotes']",
-    "ingredients": "//span[@id='v_ingredients']//li", 
-    "instructions": "//div[@id='InstructionSection']/p/span",
-    "image": "//img[@id='RecipePhoto']/@src"
-  }
+    "name": "//h2/span[@itemprop='name']",
+    "desc": "//span[@itemprop='description']/p",
+    "ingredients": "//span[@itemprop='ingredients']", 
+    "instructions": "//span[@itemprop='recipeInstructions']",
+    "image": "//img[@itemprop='image']/@src"
+  },
+ "m.wholefoodsmarket.com": {
+    "name": "//h2/span[@itemprop='name']",
+    "desc": "//span[@itemprop='description']/p",
+    "ingredients": "//span[@itemprop='ingredients']", 
+    "instructions": "//span[@itemprop='recipeInstructions']",
+    "image": "//img[@itemprop='image']/@src"
+  }  
 
 }
