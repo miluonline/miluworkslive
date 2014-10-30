@@ -452,13 +452,13 @@ top: 0px;
 
 .recipe-row1{
   list-style-type: none;
-  border: 1px solid green;
+  border: 1px solid cadetblue;
   padding: 10px;
 }
 
 .recipe-row2{
   list-style-type: none;
-  border: 1px solid green;
+  border: 1px solid cadetblue;
   padding: 10px;
   width: 250px;
   float: right;
