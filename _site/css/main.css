@@ -460,6 +460,7 @@ top: 0px;
   list-style-type: none;
   border: 1px solid cadetblue;
   padding: 10px;
-  width: 250px;
+  width: 200px;
   float: right;
+  word-wrap: break-word;
 }
