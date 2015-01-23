@@ -455,7 +455,6 @@ top: 0px;
   border: 1px solid cadetblue;
   padding: 10px;
   height: 40px;
-  width: 150px;
 }
 
 .recipe-row2{
@@ -467,4 +466,8 @@ top: 0px;
   float: right;
   word-wrap: break-word;
   height: 40px;
+}
+
+.recipe-rows{
+  width: 352px;
 }
