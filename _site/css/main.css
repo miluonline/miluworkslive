@@ -452,22 +452,31 @@ top: 0px;
 
 .recipe-row1{
   list-style-type: none;
-  border: 1px solid cadetblue;
+  border: 1px solid gainsboro;
   padding: 10px;
   height: 40px;
+  background: darkseagreen;
 }
 
 .recipe-row2{
   list-style-type: none;
-  border: 1px solid cadetblue;
+  border: 1px solid gainsboro;
   padding: 10px;
   padding-right: 40px;
   width: 100px;
   float: right;
   word-wrap: break-word;
   height: 40px;
+  background: darkseagreen;
 }
 
 .recipe-rows{
   width: 300px;
 }
+
+.recipe-row1 a, .recipe-row2 a{
+  color: floralwhite;
+}
+
+.recipe-row1 a:hover, .recipe-row2 a:hover { color: #000; text-decoration: none; }
+.recipe-row1 a:visited, .recipe-row2 a:visited { color: floralwhite; }
